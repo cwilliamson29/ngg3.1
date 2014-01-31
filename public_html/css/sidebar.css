@@ -1,0 +1,77 @@
+/*********BEGIN SIDEBAR*************/
+.sidebar{
+    margin: 100px 0px 0px 0px;
+    width:200px;
+    height: 370px;
+    background: #333333;
+    float: left;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    box-shadow: 10px 10px 10px #888888;
+}
+.headerBox{
+    width: 98px;
+    height: 50px;
+    float: left;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+.playerBut{
+    margin: 15px;
+    width: 70px;
+    height: 30px;
+    background: white;
+    border-width: 0px;
+}
+.sbHeader{
+    font-family: Cursive;
+    font-size: 40px;
+    text-align: center;
+    color: red;
+    text-shadow: 1px 1px 20px black;
+}
+.nameInputWrap{
+    height: 135px;
+    text-align: center;
+}
+.resetButBox{
+    text-align: center;
+}
+.nameInput{
+    width: 130px;
+    text-align: center;
+    border-color: black;
+    background: gray;
+}
+.nameInputSubmit{
+    margin: 10px;
+    width: 130px;
+    height: 40px;
+    font-family: Cursive;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-color: red;
+    border-width: 3px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+.resetBut{
+    margin: 3px;
+    width: 130px;
+    height: 40px;
+    font-family: Cursive;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-color: red;
+    border-width: 3px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+/********END SIDEBAR**************/

@@ -1,0 +1,43 @@
+/*******BEGIN COLUMNS*******************/
+.columnLeft{
+    height: 180px;
+    width: 200px;
+    float: left;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+.columnCenter{
+    float: left;
+    height: 180px;
+    width: 200px;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+.columnRight{
+    height: 180px;
+    width: 200px;
+    float: left;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+.bottomColumnLeft{
+    height: 130px;
+    width: 301px;
+    float: left;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+.bottomColumnRight{
+    height: 130px;
+    width: 301px;
+    float: left;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+/**********END COLUMNS******************/
+

@@ -1,0 +1,71 @@
+/*******BEGIN PLAYER DISPLAY BOX********/
+
+.player1Wrap {
+    width:102px;
+    margin: 50px 40px 40px 40px;
+    text-align: center;
+}
+.player2Wrap {
+    width:102px;
+    margin: 10px 60px 0px 0px;
+    text-align: center;
+    float: right;
+}
+.player3Wrap {
+    margin: 10px 0px 0px 60px;
+    width: 102px;
+    float: left;
+    text-align: center;
+}
+.player4Wrap {
+    margin: 50px 40px 40px 50px;
+    width:102px;
+    float: left;
+    text-align: center;
+}
+.playerName {
+    width: 102px;
+    height: 20px;
+    font-weight: bold;
+    background-color: #3399FF;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+.player {
+    width: 100px; 
+    height: 50px; 
+    background-color: black; 
+    font-size: 45px;
+    color: white; 
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: #3399FF;
+}
+
+.playerScore {
+    float: left;
+    width:80px; 
+    height:20px; 
+    background-color:#3399FF; 
+    font-family: Verdana;
+    border-bottom-left-radius: 10px 10px;
+}
+
+.pScoreNumber {
+    float: right;
+    width:22px; 
+    height:20px; 
+    background-color:#3399FF; 
+    font-family: Verdana;
+    border-bottom-right-radius: 10px 10px;
+}
+.num {
+    margin: 10px;
+    width:80px;
+    background-color: gray;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+}
+/*******END PLAYER DISPLAY BOX********/
+

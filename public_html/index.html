@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="NumberGuess3">
+    <head>
+        <title>Number Guessing Game Version 3.1</title>
+        <link rel='stylesheet' href='css/main.css'/>
+        <link rel='stylesheet' href='css/columns.css'/>
+        <link rel='stylesheet' href='css/player.css'/>
+        <link rel='stylesheet' href='css/sidebar.css'/>
+        <link rel='stylesheet' href='css/dealer.css'/>
+        
+    </head>
+    <body ng-controller="PlayerController">
+        <div class="completeWrapper" >
+            <div class="howTo">
+                <center><h1>Number Guessing Game, Version 3</h1></center>
+                <p>The object of the game is to guess the dealers number.<br>
+                    You may have up to 4 players. You May guess a number between 1-10.<br></p>
+                <center> Have fun!</center>
+            </div>
+            <!--Column Left-->
+            <div class="columnLeft">
+                <!--PLAYER 1 DISPLAY BOX-->
+                <div class="player1Wrap">
+                    <div class="playerName" ng-cloak>{{player1.name}}</div>
+                    <div class="player" ng-cloak>{{player1.guess}}</div>
+                    <div class="playerScore">Score:</div>
+                    <div class="pScoreNumber">{{player1.score}}</div>
+                    <div class="num"><input type="number" ng-model="player1.guess"class="numberGuess" min="1" max="10"></div>
+                </div>
+
+            </div>
+
+            <!--Column Center-->
+            <div class="columnCenter">
+
+                <!--DEALER DISPLAY BOX-->
+                <div class="dealerWrap">
+                    <div class="dealerName"><b>{{dealer.name}}</b></div>
+                    <div class="dealer">{{dealer.guess}}</div>
+                    <div class="dealerScore">Score:</div>
+                    <div class="dealerScoreNumber">{{dealer.score}}</div>
+                </div>
+
+                <div class="winner">
+                    <div class="winnerInside">{{win.name}}</div>
+                </div>
+            </div>
+            <!--Column Right-->
+            <div class="columnRight" >
+
+                <!--PLAYER 4 DISPLAY BOX-->
+                <div class="player4Wrap" ng-show="player4Box.show">
+                    <div class="playerName">{{player4.name}}</div>
+                    <div class="player">{{player4.guess}}</div>
+                    <div class="playerScore">Score:</div>
+                    <div class="pScoreNumber">{{player4.score}}</div>
+                    <div class="num"><input type="number" ng-model="player4.guess" class="numberGuess" min="1" max="10"></div>
+                </div>
+            </div>
+
+            <!--Left column for player 2-->
+            <div class="bottomColumnLeft">
+                <!--PLAYER 2 DISPLAY BOX-->
+                <div class="player2Wrap" ng-show="player2Box.show">
+                    <div class="playerName">{{player2.name}}</div>
+                    <div class="player">{{player2.guess}}</div>
+                    <div class="playerScore">Score:</div>
+                    <div class="pScoreNumber">{{player2.score}}</div>
+                    <div class="num"><input type="number" ng-model="player2.guess" class="numberGuess" min="1" max="10"></div>
+                </div>
+            </div> 
+
+            <!--Right column for player 3-->
+            <div class="bottomColumnRight" >
+                <!--PLAYER 3 DISPLAY BOX-->
+                <div class="player3Wrap" ng-show="player3Box.show">
+                    <div class="playerName">{{player3.name}}</div>
+                    <div class="player">{{player3.guess}}</div>
+                    <div class="playerScore">Score:</div>
+                    <div class="pScoreNumber">{{player3.score}}</div>
+                    <div class="num"><input ng-model="player3.guess" class="numberGuess" type="number" min="1" max="10"></div>
+                </div>
+            </div>
+            <div class="submit"><input class="submit2" type="submit" value="Play!" ng-click="dealerNum(); winner()"></div>
+            <div class="madeBy">Created By: Chris Williamson @ <a href="http://github.com/cwilliamson29" target="blank">GitHib</a></div>
+
+        </div>
+
+        <div class="sidebar">
+            <div class="headerBox"><button ng-click="toggle1Player()" class="playerBut">1 Player</button></div>
+            <div class="headerBox"><button ng-click="toggle2Player()" class="playerBut">2 Player</button></div>
+            <div class="headerBox"><button ng-click="toggle3Player()" class="playerBut">3 Player</button></div>
+            <div class="headerBox"><button ng-click="toggle4Player()" class="playerBut">4 Player</button></div>
+            <div class="sbHeader">Players</div>
+            <div class="nameInputWrap">
+                <input ng-model="player1.name" class="nameInput">
+                <input ng-model="player2.name" class="nameInput" ng-show="player2Box.show">
+                <input ng-model="player3.name" class="nameInput" ng-show="player3Box.show">
+                <input ng-model="player4.name" class="nameInput" ng-show="player4Box.show">
+            </div>
+            <div class="resetButBox"><input type=button value="Reset" class="resetBut" onClick="window.location.reload()"></div>
+        </div>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+    </body>
+</html>

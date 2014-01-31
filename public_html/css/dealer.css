@@ -1,0 +1,55 @@
+/*******BEGIN DEALER DISPLAY BOX********/
+.dealerWrap {
+    width:102px;
+    margin: 25px 25px 25px 50px;
+    text-align: center;
+}
+.dealerName {
+    width: 102px;
+    height: 20px;
+    background-color: red;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+.dealer {
+    width: 100px; 
+    height: 50px; 
+    background-color: black; 
+    font-size: 45px; 
+    color: white; 
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: red;
+}
+
+.dealerScore {
+    float: left;
+    width:80px; 
+    height:20px; 
+    background-color:red; 
+    font-family: Verdana;
+    border-bottom-left-radius: 10px 10px;
+}
+
+.dealerScoreNumber {
+    float: right;
+    width:22px; 
+    height:20px; 
+    background-color:red; 
+    font-family: Verdana;
+    border-bottom-right-radius: 10px 10px;
+}
+.winner{
+    color: white;
+    width: 100%;
+    height: 12px;
+}
+.winnerInside{
+    margin: 40px 0px 0px 0px;
+    color:white;
+    font-size: 18px;
+    font-family: Verdana;
+    text-align: center;
+}
+/*******END DEALER DISPLAY BOX********/
